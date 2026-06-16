@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #16110f;
+  --bg-secondary: #1d1714;
+  --bg-card: rgba(36, 28, 24, 0.72);
+  --bg-elevated: rgba(255, 248, 240, 0.035);
+
+  --border-color: rgba(255, 240, 220, 0.08);
+  --border-hover: rgba(255, 240, 220, 0.16);
+
+  --text-primary: #f3e9dc;
+  --text-secondary: #cbbba8;
+  --text-muted: #8f7f6d;
+
+  /* Accent */
+  --accent-primary: #c67b3d;
+  --accent-primary-hover: #d28b52;
+
+  --accent-secondary: #9d7a50;
+  --accent-secondary-hover: #b08b5f;
+
+  /* Status */
+  --success: #7a9b76;
+  --danger: #8a3b2e;
+  --warning: #b77938;
+
+  /* Gradients */
+  --gradient-highlight: linear-gradient(to right, #c67b3d, #9d7a50);
+
+  --gradient-hero: linear-gradient(to bottom, #16110f, #211917);
+
+  /* Shadows */
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.42);
+
+  --shadow-hover: 0 18px 50px rgba(0, 0, 0, 0.58);
+
+  --glass-blur: blur(18px);
+}
+
+/* ───────────────────────────── */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(198, 123, 61, 0.05), transparent 30%),
+    var(--bg-primary);
+
+  color: var(--text-primary);
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
+
+  letter-spacing: 0.01em;
+}
+
+/* Editorial typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+/* Selection */
+::selection {
+  background: rgba(198, 123, 61, 0.25);
+  color: var(--text-primary);
+}
+
+/* ─────────────────────────────
+   Scrollbar
+───────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(243, 233, 220, 0.14);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(243, 233, 220, 0.22);
+}
+
+/* Hide scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ─────────────────────────────
+   Film grain texture
+───────────────────────────── */
+
+body::before {
+  content: '';
+
+  position: fixed;
+  inset: 0;
+
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+
+  pointer-events: none;
+  z-index: 9999;
+
+  opacity: 0.22;
+
+  mix-blend-mode: soft-light;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', serif;
+}
