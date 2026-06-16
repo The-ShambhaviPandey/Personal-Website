@@ -9,7 +9,7 @@ dotenv.config()
 const app = express()
 
 app.use(
-  cors({ origin: ['http://localhost:5173', 'https://your-deployed-site.com'] })
+  cors({ origin: ['http://localhost:5173', 'https://shambhavipandey.netlify.app/'] })
 )
 app.use(express.json({ limit: '10mb' }))
 
