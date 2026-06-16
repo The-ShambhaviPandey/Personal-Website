@@ -752,8 +752,6 @@ Completing the Google Gen AI Exchange Program was an important milestone in my t
     title: 'Agentic Honeypot System',
     date: '16 February 2026',
     readTime: '4 min read',
-    thumbnailImage:
-      'https://india.un.org/sites/default/files/styles/hero_header_2xl_1x/public/2026-02/G9aBAoKbUAArxmY.jpg?itok=Hp6TV10K',
     coverImage:
       'https://images.architectureplusdesign.in/wp-content/uploads/2025/06/13135327/ITPO-Front-Facade-Night-View-Hero-image-template-1920-x-840-pixel-1600x700.jpg',
     excerpt:
@@ -853,8 +851,6 @@ Completing the Google Gen AI Exchange Program was an important milestone in my t
     title: 'Agentic Honeypot Tester',
     date: '16 February 2026',
     readTime: '4 min read',
-    thumbnailImage:
-      'https://india.un.org/sites/default/files/styles/hero_header_2xl_1x/public/2026-02/G9aBAoKbUAArxmY.jpg?itok=Hp6TV10K',
     excerpt:
       'Building a benchmarking suite to answer the hardest question in AI systems: Does it actually work consistently?',
     certificate: 'https://www.guvi.in/verify-certificate?id=07Zn4z5687Nj9Y1h11',
@@ -950,8 +946,6 @@ Completing the Google Gen AI Exchange Program was an important milestone in my t
     title: 'ClauseBuddy - Legal AI',
     date: '18 October 2025',
     readTime: '4 min read',
-    thumbnailImage:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc967P2730FV7bxC_XErvSIcSl5OhFJZ7Llg&s',
     coverImage:
       'https://sitescdn.wearevennture.co.uk/public/gleeson-recruitment/mediahub/istock-1720641220-38cf19b507f04f879b2ade0b621b7721.jpg',
     excerpt:
@@ -1040,8 +1034,6 @@ Completing the Google Gen AI Exchange Program was an important milestone in my t
     title: 'Realtime Deepfake Detector',
     date: '10 February 2025',
     readTime: '5 min read',
-    thumbnailImage:
-      'https://www.ofcom.org.uk/siteassets/resources/images/-news-centre/thumbnail-images/misc/abstract/deepfake-web.jpg?width=1920&height=577&quality=80',
     coverImage:
       'https://www.ofcom.org.uk/siteassets/resources/images/-news-centre/thumbnail-images/misc/abstract/deepfake-web.jpg?width=1920&height=577&quality=80',
     excerpt:
@@ -1119,8 +1111,6 @@ Completing the Google Gen AI Exchange Program was an important milestone in my t
     title: 'Mausam - Weather Forecasting App',
     date: '22 March 2023',
     readTime: '4 min read',
-    thumbnailImage:
-      'https://wmo.int/sites/default/files/styles/hero_image_desktop_1x/public/2023-02/50732578156_938448bb41_k.jpg?h=7c0b8785&itok=RCyO5VfM',
     coverImage:
       'https://wmo.int/sites/default/files/styles/hero_image_desktop_1x/public/2023-02/50732578156_938448bb41_k.jpg?h=7c0b8785&itok=RCyO5VfM',
     excerpt:
@@ -1318,8 +1308,6 @@ Completing the Google Gen AI Exchange Program was an important milestone in my t
     title: 'Co-Organizer — GDG MGMCoET',
     date: 'August 2025 – Present',
     readTime: '3 min read',
-    thumbnailImage:
-      'https://media.licdn.com/dms/image/v2/D563DAQEJmi6MCukCig/image-scale_191_1128/image-scale_191_1128/0/1727971457588/gdg_mgmcoet_cover?e=1782021600&v=beta&t=WxJwdZNENCgAhIdYOmrpfNriX7AsCHQrx6rT3cREsQw',
     coverImage:
       'https://media.licdn.com/dms/image/v2/D563DAQEJmi6MCukCig/image-scale_191_1128/image-scale_191_1128/0/1727971457588/gdg_mgmcoet_cover?e=1782021600&v=beta&t=WxJwdZNENCgAhIdYOmrpfNriX7AsCHQrx6rT3cREsQw',
     linkedin:
@@ -1450,8 +1438,6 @@ Completing the Google Gen AI Exchange Program was an important milestone in my t
     title: 'Community Manager, Delhi NCR — OSCode',
     date: 'March 2026 – Present',
     readTime: '3 min read',
-    thumbnailImage:
-      'https://media.licdn.com/dms/image/v2/D563DAQGEDr5mrJZ6Mg/image-scale_191_1128/B56ZwIt2L1K4Ac-/0/1769672762574/oscode_mgmcoet_cover?e=1782028800&v=beta&t=2H0ZOkL1X_0qbCCoyxvKc_u75sQsLHnrxGGCMon-p2I',
     coverImage:
       'https://media.licdn.com/dms/image/v2/D563DAQGEDr5mrJZ6Mg/image-scale_191_1128/B56ZwIt2L1K4Ac-/0/1769672762574/oscode_mgmcoet_cover?e=1782028800&v=beta&t=2H0ZOkL1X_0qbCCoyxvKc_u75sQsLHnrxGGCMon-p2I',
     excerpt:
@@ -1545,8 +1531,6 @@ Completing the Google Gen AI Exchange Program was an important milestone in my t
     title: 'DevOps & Cloud',
     date: 'April 2026 – Present',
     readTime: '3 min read',
-    thumbnailImage:
-      'https://images.unsplash.com/vector-1761074483084-ec628a7624b6?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     excerpt:
       'Exploring Linux systems, cloud platforms, containerization, and deployment workflows to understand how software operates at scale.',
     resources: [
@@ -1592,8 +1576,6 @@ Completing the Google Gen AI Exchange Program was an important milestone in my t
     title: 'Data Structures & Algorithms',
     date: 'March 2026 – Present',
     readTime: '3 min read',
-    thumbnailImage:
-      'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&q=80',
     excerpt:
       'Practicing problem solving, algorithmic thinking, and interview-focused DSA using Java.',
     resources: [
@@ -1646,8 +1628,6 @@ Completing the Google Gen AI Exchange Program was an important milestone in my t
     title: 'Agentic AI & OpenAI SDK',
     date: '20 December 2025',
     readTime: '3 min read',
-    thumbnailImage:
-      'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&q=80',
     excerpt:
       'Exploring Agentic AI systems using OpenAI SDK after attending GDG DevFest, eventually applying these concepts to build an AI-powered honeypot system that reached the India AI Impact Summit 2026 Grand Finale.',
     resources: [
@@ -1707,8 +1687,6 @@ Completing the Google Gen AI Exchange Program was an important milestone in my t
     title: 'Backend Development',
     date: 'June 2024 – Present',
     readTime: '3 min read',
-    thumbnailImage:
-      'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=80',
     excerpt:
       'My journey into building scalable backend systems using Node.js, Express, MongoDB, and modern API architectures.',
     resources: [
@@ -1757,8 +1735,6 @@ Completing the Google Gen AI Exchange Program was an important milestone in my t
     title: 'UI/UX Fundamentals',
     date: '20 March 2024',
     readTime: '2 min read',
-    thumbnailImage:
-      'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80',
     excerpt:
       'Exploring user-centered design principles and applying them to real-world product development using Figma.',
     resources: [
@@ -1819,8 +1795,6 @@ Completing the Google Gen AI Exchange Program was an important milestone in my t
     title: 'Frontend Development',
     date: '19 January 2024',
     readTime: '3 min read',
-    thumbnailImage:
-      'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80',
     excerpt:
       'My journey into building responsive, accessible, and interactive experiences for the web.',
     resources: [

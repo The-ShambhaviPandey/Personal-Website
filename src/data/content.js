@@ -11,12 +11,7 @@ export const PERSONAL = {
   resumeUrl: '/resume.pdf',
 }
 
-// ── HERO SLIDES ──
-// darkOverlay: additional black scrim rendered on top of the photo (0–1).
-// Stacks with the shared gradient, so a bright venue photo needs ~0.5,
-// a already-dark portrait shot needs 0 (no extra overlay).
-
-import CodeClash from '/home/shambhavi/VSCode/Projects/Personal Website/src/assets/CodeClash.webp' // keep your existing import
+import CodeClash from '../assets/CodeClash.webp' 
 
 export const HERO_SLIDES = [
   {
