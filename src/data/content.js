@@ -43,7 +43,7 @@ export const HERO_SLIDES = [
     accent: '#db4f4f',
     image:
       'https://exhibitionglobe.com/wp-content/uploads/2025/09/Maharashtra-Government-to-Build-%E2%80%98Bharat-Mandapam-Inspired-Cultural-Centres-in-Key-Cities-scaled.jpg',
-    darkOverlay: 0.25, // bright venue interior — needs a heavy scrim
+    darkOverlay: 0.15, // bright venue interior — needs a heavy scrim
   },
   {
     id: 3,

@@ -195,74 +195,66 @@ export default function HeroSlider() {
         and then stay mounted (opacity: 0) to avoid re-layout on transition.
       */}
       {HERO_SLIDES.map((s, i) => {
-        const shouldRender = loadedImages.has(i)
-        if (!shouldRender) {
-          // Render a placeholder div so the DOM slot exists but costs nothing
-          return (
-            <div
-              key={s.id}
-              className='absolute inset-0'
-              style={{ zIndex: 1, opacity: 0 }}
-            />
-          )
-        }
+      const shouldRender = loadedImages.has(i)
+      if (!shouldRender) {
+        return <div key={s.id} className='absolute inset-0' style={{ zIndex: 1, opacity: 0 }} />
+      }
 
-        return (
+      return (
+        <div
+          key={s.id}
+          className='absolute inset-0'
+          style={{
+            zIndex: 1,
+            opacity: i === current ? 1 : 0,
+            willChange: 'opacity',
+            transition: `opacity ${CROSSFADE_MS}ms cubic-bezier(0.4,0,0.2,1)`,
+          }}
+        >
+          <img
+            src={s.image}
+            alt=''
+            aria-hidden='true'
+            className='absolute inset-0 w-full h-full object-cover'
+            fetchPriority={i === 0 ? 'high' : 'low'}
+            loading={i === 0 ? 'eager' : 'lazy'}
+            decoding='async'
+            style={{
+              transform: 'scale(1.02)',
+              transformOrigin: 'center',
+              willChange: 'transform',
+            }}
+          />
+
+          {/* Per-slide dark overlay */}
           <div
-            key={s.id}
+            aria-hidden='true'
             className='absolute inset-0'
             style={{
-              zIndex: 1,
-              opacity: i === current ? 1 : 0,
-              // will-change promotes to compositor layer — no main-thread repaints
-              willChange: 'opacity',
-              transition: `opacity ${CROSSFADE_MS}ms cubic-bezier(0.4,0,0.2,1)`,
+              background: `linear-gradient(
+                to top,
+                rgba(0,0,0,${Math.min((s.darkOverlay || 0) + 0.82, 1)}) 0%,
+                rgba(0,0,0,${Math.min((s.darkOverlay || 0) + 0.35, 1)}) 55%,
+                rgba(0,0,0,${Math.min((s.darkOverlay || 0) + 0.15, 1)}) 100%
+              )`,
             }}
-          >
-            <img
-              src={s.image}
-              alt=''
+          />
+
+          {/* Extra darkening — slide 2 only */}
+          {i === 1 && (
+            <div
               aria-hidden='true'
-              className='absolute inset-0 w-full h-full object-cover'
-              // fetchpriority on the first image speeds up LCP
-              fetchPriority={i === 0 ? 'high' : 'low'}
-              loading={i === 0 ? 'eager' : 'lazy'}
-              decoding='async'
+              className='absolute inset-0'
               style={{
-                transform: 'scale(1.02)',
-                transformOrigin: 'center',
-                // Compositor-only — no layout or paint triggered
-                willChange: 'transform',
+                background: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.55) 25%, rgba(0,0,0,0.55) 45%, transparent 50%)',
+                pointerEvents: 'none',
               }}
             />
+          )}
+        </div>
+      )
+    })}
 
-            {s.darkOverlay > 0 && (
-              <div
-                aria-hidden='true'
-                className='absolute inset-0'
-                style={{
-                  backgroundImage: `linear-gradient(
-                    to bottom,
-                    rgba(0,0,0,${Math.min(s.darkOverlay + 0.15, 1)}) 0%,
-                    rgba(0,0,0,${s.darkOverlay}) 50%,
-                    rgba(0,0,0,${Math.max(s.darkOverlay - 0.1, 0)}) 100%
-                  )`,
-                }}
-              />
-            )}
-          </div>
-        )
-      })}
-
-      {/* Shared static overlay */}
-      <div
-        className='absolute inset-0'
-        style={{
-          background:
-            'linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.35) 55%, rgba(0,0,0,0.15) 100%)',
-          zIndex: 2,
-        }}
-      />
 
       {/* Noise grain — moved to CSS pseudo-element via className to avoid inline SVG re-parsing */}
       <div
