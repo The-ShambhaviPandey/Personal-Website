@@ -8,7 +8,7 @@ export const PERSONAL = {
   email: 'theshambhavipandey@gmail.com',
   linkedin: 'https://www.linkedin.com/in/theshambhavipandey/',
   github: 'https://github.com/The-ShambhaviPandey',
-  resumeUrl: '/resume.pdf',
+  resumeUrl: '/pdf/resume.pdf',
 }
 
 import CodeClash from '../assets/CodeClash.webp' 
@@ -21,7 +21,7 @@ export const HERO_SLIDES = [
     subline: 'Software Development Engineer',
     cta: {
       label: 'Download Resume',
-      href: '/resume.pdf',
+      href: '/pdf/resume.pdf',
       type: 'download',
       download: `Shambhavi_Pandey_Resume_${new Date().getFullYear()}.pdf`,
     },
